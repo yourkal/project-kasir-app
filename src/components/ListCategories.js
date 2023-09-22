@@ -11,6 +11,7 @@ import {
   faList,
   faIceCream,
   faPizzaSlice,
+  faCookieBite,
 } from "@fortawesome/free-solid-svg-icons";
 
 //ICON DAFTAR KATEGORI
@@ -22,7 +23,7 @@ const Icon = ({ nama }) => {
     return <FontAwesomeIcon icon={faCoffee} />;
   }
   if (nama === "Cemilan") {
-    return <FontAwesomeIcon icon={faCheese} className="mr-2" />;
+    return <FontAwesomeIcon icon={faCookieBite} className="mr-2" />;
   }
   if (nama === "Eskrim") {
     return <FontAwesomeIcon icon={faIceCream} className="mr-2" />;
@@ -58,7 +59,6 @@ export default class ListCategories extends Component {
     return (
       <Col md="2" mt="2">
         <h4>
-          <FontAwesomeIcon icon={faUtensils} />
           <strong> Kategori Menu </strong>
         </h4>
         <hr />
