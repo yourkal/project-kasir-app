@@ -20,7 +20,9 @@ const Menus = ({ menu, masukKeranjang }) => {
           <Card.Title>
             <strong>{menu.nama}</strong>
           </Card.Title>
+            <p/>
           <Card.Text>{menu.deskripsi}</Card.Text>
+          <p/>
           <Card.Text>
             {/* Rp. {menu.harga} */}
             <b>

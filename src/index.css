@@ -23,6 +23,20 @@ body {
   background-color: #22668A;
 }
 
+@media only screen and (max-height: 1000px){
+  .hasil{
+    height: 450px;
+  }
+}
+
+.overflow-auto::-webkit-scrollbar {
+  display: none;
+}
+
+.menu{
+  height: 800px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

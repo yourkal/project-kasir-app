@@ -1,3 +1,5 @@
+import { faStore } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
@@ -11,9 +13,11 @@ const NavbarComponent = () => {
     <Navbar variant="dark" expand="lg">
       <Container>
         <Navbar.Brand href="#home">
+        <FontAwesomeIcon icon={faStore} />
+        {" "}
           <strong>Yourkall </strong>Shop
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
+        {/* <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
@@ -33,7 +37,7 @@ const NavbarComponent = () => {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-        </Navbar.Collapse>
+        </Navbar.Collapse> */}
       </Container>
     </Navbar>
   );

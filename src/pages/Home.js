@@ -133,8 +133,7 @@ export default class Home extends Component {
     //STATE
     const { menus, categoriYangDipilih, keranjangs } = this.state;
     return (
-    
-        //<NavbarComponent />
+      
         <div className="mt-3">
           <Container fluid>
             <Row>
@@ -143,16 +142,15 @@ export default class Home extends Component {
                 changeCategory={this.changeCategory}
                 categoriYangDipilih={categoriYangDipilih}
               />
-              <Col>
+              <Col className="mt-2">
                 <h4 >
-                  <FontAwesomeIcon icon={faStore} />
                   <strong>
                     {" "}
                     Selamat Datang Di Yourkall Shop Selamat Berbelanja !!!{" "}
                   </strong>
                 </h4>
                 <hr />
-                <Row>
+                <Row className="overflow-auto menu">
                   {menus &&
                     menus.map((menu) => (
                       <Menus
@@ -164,7 +162,7 @@ export default class Home extends Component {
                     ))}
                 </Row>
               </Col>
-              <Hasil keranjangs={keranjangs}/>
+              <Hasil keranjangs={keranjangs} {...this.props}/>
             </Row>
           </Container>
         </div>
@@ -172,3 +170,28 @@ export default class Home extends Component {
     );
   }
 }
+
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <NavbarComponent/>
+//       <div className="mt-3">
+//         <Container fluid>
+//           <Row>
+//             <ListCategories/>
+//             <Col>
+//               <h4>
+//                 <strong>Daftar Menu</strong>
+//               </h4>
+//               <hr/>
+//             </Col>
+//             <Hasil/>
+//           </Row>
+//         </Container>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default App;
